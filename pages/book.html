@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - OUTZR</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">OUTZR</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="book.html" class="active">Book Appointment</a>
+            <a href="appointments.html">My Appointments</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="form-container">
+        <div class="form-card">
+            <h2>Book a Repair Service</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="deviceType">Device Type</label>
+                    <select id="deviceType" name="deviceType" required>
+                        <option value="">Select Device Type</option>
+                        <option value="phone">Phone</option>
+                        <option value="laptop">Laptop</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="brand">Brand</label>
+                    <input type="text" id="brand" name="brand" placeholder="e.g., Apple, Samsung, Dell" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Model</label>
+                    <input type="text" id="model" name="model" placeholder="e.g., iPhone 12, XPS 13" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="problem">Problem Description</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Please describe the issue with your device" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes (Optional)</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Any additional information you'd like us to know"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Book Appointment</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Repair Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+</html>

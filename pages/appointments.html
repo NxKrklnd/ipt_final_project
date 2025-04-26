@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments - Tech Repair Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/appointments.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Tech Repair Pro</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="book.html">Book Appointment</a>
+            <a href="appointments.html" class="active">My Appointments</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="appointments-container">
+        <h1>My Appointments</h1>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="statusFilter">Status</label>
+                <select id="statusFilter">
+                    <option value="all">All</option>
+                    <option value="scheduled">Scheduled</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="dateSort">Sort by</label>
+                <select id="dateSort">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="appointments-list" id="appointmentsList">
+            <!-- Appointments will be populated by JavaScript -->
+        </div>
+
+        <div class="no-appointments" id="noAppointments" style="display: none;">
+            <p>No appointments found.</p>
+            <a href="book.html" class="cta-button">Book New Appointment</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Repair Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/appointments.js"></script>
+</body>
+</html>

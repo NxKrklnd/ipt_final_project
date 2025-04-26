@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - OUTZR</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">OUTZR</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="book.html">Book Appointment</a>
+            <a href="appointments.html">My Appointments</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="login-btn">Logout</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <div class="welcome-section">
+            <h1>Welcome back, <span id="userName">User</span></h1>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card profile-card">
+                <h2>Profile Information</h2>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> <span id="profileName"></span></p>
+                    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                    <p><strong>Phone:</strong> <span id="profilePhone"></span></p>
+                </div>
+            </div>
+
+            <div class="dashboard-card upcoming-appointment">
+                <h2>Upcoming Appointment</h2>
+                <div id="upcomingAppointment" class="appointment-details">
+                    <p class="no-appointment">No upcoming appointments</p>
+                </div>
+                <a href="book.html" class="dashboard-button">Book New Appointment</a>
+            </div>
+
+            <div class="dashboard-card quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <a href="book.html" class="action-button">Book Appointment</a>
+                    <a href="appointments.html" class="action-button">View All Appointments</a>
+                    <a href="profile.html" class="action-button">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Repair Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
